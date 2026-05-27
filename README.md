@@ -33,7 +33,7 @@ python3 scripts/benchmarking.py
 ```
 
 # Makefile Inicial
-``makefile
+```makefile
 CC=gcc
 CFLAGS=-Wall -Wextra -std=c11 -Iinclude
 
@@ -53,4 +53,9 @@ test:
 clean:
 	rm -f bin/*
 
-``
+```
+
+## Requerimientos
+ matplotlib
+ numpy
+ pandas
