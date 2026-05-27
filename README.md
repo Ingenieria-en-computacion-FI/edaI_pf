@@ -56,6 +56,102 @@ clean:
 ```
 
 ## Requerimientos
- matplotlib
- numpy
- pandas
+ - matplotlib
+ - numpy
+ - pandas
+
+
+## Estructura de proyecto
+```
+mini-os-project/
+│
+├── README.md
+├── Makefile
+├── .gitignore
+├── requirements.txt
+│
+├── bin/
+│
+├── docs/
+│   ├── bitacora_ia.md
+│   ├── reporte.tex
+│   └── arquitectura/
+│       ├── scheduler.md
+│       ├── memoria.md
+│       └── estructuras.md
+│
+├── data/
+│   ├── inputs/
+│   ├── outputs/
+│   ├── benchmarks/
+│   └── logs/
+│
+├── include/
+│   ├── process.h
+│   ├── stack.h
+│   ├── queue.h
+│   ├── circular_queue.h
+│   ├── linked_list.h
+│   ├── doubly_linked_list.h
+│   ├── scheduler.h
+│   ├── memory_manager.h
+│   └── algorithms.h
+│
+├── src/
+│   ├── main.c
+│   │
+│   ├── stack.c
+│   ├── queue.c
+│   ├── circular_queue.c
+│   ├── linked_list.c
+│   ├── doubly_linked_list.c
+│   │
+│   ├── scheduler/
+│   │   ├── fifo.c
+│   │   ├── round_robin.c
+│   │   └── sjf.c
+│   │
+│   ├── memory/
+│   │   ├── first_fit.c
+│   │   ├── best_fit.c
+│   │   ├── worst_fit.c
+│   │   ├── coalescence.c
+│   │   └── compactation.c
+│   │
+│   ├── algorithms/
+│   │   ├── brute_force.c
+│   │   ├── greedy.c
+│   │   ├── backtracking.c
+│   │   ├── divide_conquer.c
+│   │   ├── dp_topdown.c
+│   │   ├── dp_bottomup.c
+│   │   └── incremental.c
+│   │
+│   └── utils/
+│       ├── logger.c
+│       ├── timer.c
+│       └── parser.c
+│
+├── tests/
+│   ├── test_stack.c
+│   ├── test_queue.c
+│   ├── test_circular_queue.c
+│   ├── test_memory_manager.c
+│   ├── test_scheduler.c
+│   └── integration_tests.c
+│
+├── scripts/
+│   ├── benchmark.py
+│   ├── generate_processes.py
+│   ├── graphs.py
+│   └── validate_results.py
+│
+├── reports/
+│   ├── csv/
+│   ├── png/
+│   └── pdf/
+│
+└── gtk/
+    ├── optional_ui.c
+    └── optional_ui.h
+```
